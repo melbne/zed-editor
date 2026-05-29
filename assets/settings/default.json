@@ -769,9 +769,9 @@
     // Where to dock the project panel. Can be 'left' or 'right'.
     "dock": "right",
     // Spacing between worktree entries in the project panel. Can be 'comfortable' or 'standard'.
-    "entry_spacing": "comfortable",
+    "entry_spacing": "standard",
     // Whether to show file icons in the project panel.
-    "file_icons": true,
+    "file_icons": false,
     // Whether to show folder icons or chevrons for directories in the project panel.
     "folder_icons": true,
     // Whether to show the git status in the project panel.
@@ -804,7 +804,7 @@
       //    "always"
       // 5. Never show the scrollbar:
       //    "never"
-      "show": null,
+      "show": always,
       // Whether to allow horizontal scrolling in the project panel.
       // When false, the view is locked to the leftmost position and long file names are clipped.
       "horizontal_scroll": true,
@@ -820,7 +820,7 @@
     //    "all"
     "show_diagnostics": "all",
     // Whether to stick parent directories at top of the project panel.
-    "sticky_scroll": true,
+    "sticky_scroll": false,
     // Settings related to indent guides in the project panel.
     "indent_guides": {
       // When to show indent guides in the project panel.
@@ -886,7 +886,7 @@
     // Where to dock the outline panel. Can be 'left' or 'right'.
     "dock": "right",
     // Whether to show file icons in the outline panel.
-    "file_icons": true,
+    "file_icons": false,
     // Whether to show folder icons or chevrons for directories in the outline panel.
     "folder_icons": true,
     // Whether to show the git status in the outline panel.
@@ -926,7 +926,7 @@
       //    "always"
       // 5. Never show the scrollbar:
       //    "never"
-      "show": null,
+      "show": always,
     },
     // Default depth to expand outline items in the current file.
     // Set to 0 to collapse all items that have children, 1 or higher to collapse items at that depth or deeper.
@@ -934,7 +934,7 @@
   },
   "collaboration_panel": {
     // Whether to show the collaboration panel button in the status bar.
-    "button": true,
+    "button": false,
     // Where to dock the collaboration panel. Can be 'left' or 'right'.
     "dock": "right",
     // Default width of the collaboration panel.
@@ -983,13 +983,14 @@
     // Whether to show a badge on the git panel icon with the count of uncommitted changes.
     //
     // Default: false
-    "show_count_badge": false,
+    "show_count_badge": true,
     "scrollbar": {
       // When to show the scrollbar in the git panel.
       //
       // Choices: always, auto, never, system
       // Default: inherits editor scrollbar settings
       // "show": null
+      "show": always,
     },
     // Whether to show the addition/deletion change count next to each file in the Git panel.
     //
@@ -1012,7 +1013,7 @@
     // Whether the agent is enabled.
     "enabled": true,
     // Whether to show the agent panel button in the status bar.
-    "button": true,
+    "button": false,
     // Where to dock the agent panel. Can be 'left', 'right' or 'bottom'.
     "dock": "left",
     // Whether the agent panel should use flexible (proportional) sizing.
@@ -1201,7 +1202,7 @@
     // Whether to always use cmd-enter (or ctrl-enter on Linux or Windows) to send messages in the agent panel.
     //
     // Default: false
-    "use_modifier_to_send": false,
+    "use_modifier_to_send": true,
     // Minimum number of lines to display in the agent message editor.
     //
     // Default: 4
@@ -1219,7 +1220,7 @@
   // Whether the screen sharing icon is shown in the os status bar.
   "show_call_status_icon": true,
   // Whether to use language servers to provide code intelligence.
-  "enable_language_server": true,
+  "enable_language_server": false,
   // Whether to perform linked edits of associated ranges, if the language server supports it.
   // For example, when editing opening <html> tag, the contents of the closing </html> tag will be edited as well.
   "linked_edits": true,
